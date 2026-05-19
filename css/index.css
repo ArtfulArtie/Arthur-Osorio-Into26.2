@@ -60,13 +60,16 @@ margin: 0 auto;
     padding: 10px;
     font-size: 20px;
     flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column;
 }
 
 #Experience li{
-    background-color: aliceblue;
+    background-color: rgb(157, 196, 231);
     color: rgb(73, 20, 107);
     padding: 10px;
     margin:12px;
+    list-style-type: none;
 }
 
 #Connect{
@@ -94,20 +97,29 @@ a:active{
     color: azure;
 }
 
-#right-column{
+#experience-columns {
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    list-style-type: none;
+    gap: 40px;
+    align-items: flex-start;
 }
 
-#left-column{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
+#left-column,
+#right-column {
     flex: 1;
+}
+
+#left-column li {
+    background-color: rgb(196, 152, 152);
+    color: black;
+}
+
+#right-column li{
+ background-color: aliceblue;
+}
+
+#Experience ul {
     list-style-type: none;
+    padding: 0;
 }
 
 #remove {
@@ -116,4 +128,29 @@ a:active{
 
 section {
     margin-bottom: 40px;
+}
+
+#Skills ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    background-color: rgb(157, 196, 231);
+}
+
+#Skills li{
+    font-size: 22px;
+    background-color: rgb(5, 5, 45);
+    padding: 10px;
+    border: 5px double rgb(157, 196, 231);
+    border-radius: 10px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#Skills li:hover{
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
