@@ -31,7 +31,7 @@ color: rgb(164, 73, 73);
 margin: 0 auto;
 }
 
-#Header{
+#header{
     text-align: center;
     font-size: 20px;
     margin: 0 auto;
@@ -47,29 +47,32 @@ margin: 0 auto;
     z-index: 9px;
 }
 
-#About{
+#about{
     text-align: center;
     font-size: 20px;
     margin: 0 auto;
 }
 
-#Experience{
+#experience{
     justify-content: space-evenly;
     display:flex;
     border: 10px double rgb(210, 172, 103);
     padding: 10px;
     font-size: 20px;
     flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column;
 }
 
-#Experience li{
-    background-color: aliceblue;
+#experience li{
+    background-color: rgb(157, 196, 231);
     color: rgb(73, 20, 107);
     padding: 10px;
     margin:12px;
+    list-style-type: none;
 }
 
-#Connect{
+#connect{
     display:flex;
     margin: 0 auto;
     padding: 10px;
@@ -94,20 +97,29 @@ a:active{
     color: azure;
 }
 
-#right-column{
+#experience-columns {
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    list-style-type: none;
+    gap: 40px;
+    align-items: flex-start;
 }
 
-#left-column{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
+#left-column,
+#right-column {
     flex: 1;
+}
+
+#left-column li {
+    background-color: rgb(196, 152, 152);
+    color: black;
+}
+
+#right-column li{
+ background-color: aliceblue;
+}
+
+#experience ul {
     list-style-type: none;
+    padding: 0;
 }
 
 #remove {
@@ -116,4 +128,31 @@ a:active{
 
 section {
     margin-bottom: 40px;
+    scroll-margin-top: 10em;
+    margin-top: 10em;
+}
+
+#skills ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    background-color: rgb(157, 196, 231);
+}
+
+#skills li{
+    font-size: 22px;
+    background-color: rgb(5, 5, 45);
+    padding: 10px;
+    border: 5px double rgb(157, 196, 231);
+    border-radius: 10px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#skills li:hover{
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
