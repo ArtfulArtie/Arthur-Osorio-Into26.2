@@ -14,7 +14,7 @@ copyright.innerHTML = `\u00A9 Arthur Osorio ${thisYear}`;
 footer.appendChild(copyright);
 
 let skills = ["JavaScript", "HTML", "CSS", "Adobe Creative Cloud", "Github", "Autodesk Maya", "Mudbox", "GIMP", "Blender", "Canva", "Photography"];
-const skillsSelection = document.querySelector('#Skills');
+const skillsSelection = document.querySelector('#skills');
 const skillsList = skillsSelection.querySelector('ul');
 for(let i=0 ; i< skills.length ; i++){
     let skill = document.createElement('li');
