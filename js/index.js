@@ -22,7 +22,6 @@ for(let i=0 ; i< skills.length ; i++){
     skillsList.appendChild(skill);
 
 }
-<<<<<<< HEAD
 
 const messageForm = document.querySelector('form[name="leave_message"]')
 messageForm.addEventListener("submit", function(event) {
@@ -41,7 +40,7 @@ newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a>
 <span>${usersMessage}</span>`
 
 const removeButton = document.createElement('button');
-removeButton.innerText= 'Remove';
+removeButton.innerText= 'remove';
 removeButton.type = 'button';
 
 newMessage.appendChild(removeButton);
@@ -57,5 +56,4 @@ messageForm.reset();
 });
 
 
-=======
->>>>>>> edf02316313637c77d465a8203bf4902750175bc
+
