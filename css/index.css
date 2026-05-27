@@ -155,7 +155,6 @@ section {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-<<<<<<< HEAD
 } 
 
 form{
@@ -243,7 +242,3 @@ button:active {
     transform: translateY(1px) scale(0.98);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-=======
-}
->>>>>>> edf02316313637c77d465a8203bf4902750175bc
