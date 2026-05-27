@@ -155,4 +155,90 @@ section {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+} 
+
+form{
+display:flex;
+flex-direction: column;
+font-size: 25px;
+background-color: rgb(94, 16, 35);
+padding:2.5em;
+border-radius: 7%;
+gap: 10px;
+
+}
+
+input{
+padding: 1em;
+border-radius: 8px;
+border: 2px solid transparent;
+font-size:18px;
+transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus{
+border-color:rgb(157, 196, 231);
+box-shadow:0.7px 12px rgba(0, 0, 0, 0.3);
+transform: translateY(-5px) scale(1.03);
+outline:none;
+}
+
+textarea{
+padding: 2.5em;
+border-radius: 8px;
+border: 2px solid transparent;
+font-size:18px;
+}
+
+#messages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(157, 196, 231);
+    font-size: 25px;
+    color: rgb(187, 151, 210);
+}
+
+#messages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#messages li {
+    font-size: 22px;
+    color: rgb(157, 196, 231);
+    background-color: rgb(5, 5, 45);
+    padding: 20px;
+    border: 5px double rgb(157, 196, 231);
+    border-radius: 10px;
+    list-style-type: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;;
+}
+#messages li:hover{
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+} 
+
+button{
+padding: 12px 24px;
+font-size: 18px;
+border: none;
+border-radius: 8px;
+background-color: rgb(157, 196, 231);
+color: rgb(5, 5, 45);
+cursor: pointer;
+transition: all 0.2s
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgb(196, 152, 152);
+}
+
+button:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
