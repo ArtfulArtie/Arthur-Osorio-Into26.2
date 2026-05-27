@@ -214,7 +214,6 @@ font-size:18px;
     border: 5px double rgb(157, 196, 231);
     border-radius: 10px;
     list-style-type: none;
-    padding: 0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;;
 }
 #messages li:hover{
