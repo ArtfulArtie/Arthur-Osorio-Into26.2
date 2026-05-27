@@ -22,6 +22,7 @@ for(let i=0 ; i< skills.length ; i++){
     skillsList.appendChild(skill);
 
 }
+<<<<<<< HEAD
 
 const messageForm = document.querySelector('form[name="leave_message"]')
 messageForm.addEventListener("submit", function(event) {
@@ -56,3 +57,5 @@ messageForm.reset();
 });
 
 
+=======
+>>>>>>> edf02316313637c77d465a8203bf4902750175bc
