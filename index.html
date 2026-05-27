@@ -21,10 +21,11 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href='#experience'>Experience</a></li> 
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#Connect">Connect</a></li>
-                <li><a href='#experience'>Experience</a></li> 
+                <li><a href="#connect">Connect</a></li>
+                <li><a href="#message">Message</a></li>
                 <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
@@ -69,13 +70,22 @@
             </div>
     </section>
 
-     <section id="skills">
+    <section id="skills">
         <h2>Skills</h2>
             <ul>
 
             </ul>
     </section>
     
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+
+        </ul>
+    </section>
+
+
     <section id="connect">
         <h2>Connect</h2>
             <ul>
@@ -84,12 +94,44 @@
             </ul>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
+    <section id="message">
+     <h2>Leave a Message</h2>
+            <form name ="leave_message">
+                <label for = "usersName">Name:</label>
+                <input 
+                id="usersName"
+                type="text"
+                name="usersName"
+                required>
+                <br>
 
-        </ul>
+                <label for = "usersEmail">Email:</label>
+                <input 
+                id="usersEmail"
+                type="email"
+                name="usersEmail"
+                required>
+                <br>
+                
+                <label for = "usersMessage">Message:</label>
+                <textarea 
+                id="usersMessage"
+                name="usersMessage"
+                required></textarea>
+                <br>
+                
+                <button type="submit">Submit</button>
+            </form>
     </section>
+
+    <section id="messages">
+        <h2>Messages</h2>
+            <ul>
+
+            </ul>
+    </section>
+   
     <script src="js/index.js" defer></script>
 </body>
 </html>
+
