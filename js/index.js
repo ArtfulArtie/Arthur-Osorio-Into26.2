@@ -55,4 +55,19 @@ entry.remove();
 messageForm.reset();
 });
 
+fetch('https://api.github.com/users/artfulartie/repos')
+.then(response => response.json())
+.then(repositories => {
+    console.log(repositories)
+        const projectSection = document.querySelector('#projects');
+        const projectList = projectSection.querySelector('ul');
+            for(let i=0 ; i< repositories.length ; i++){
+                let project = document.createElement('li');
+                project.innerText= repositories[i].name;
+                projectList.appendChild(project);
+            }
+})
+.catch( error => {
+    console.log(error);
+})
 
