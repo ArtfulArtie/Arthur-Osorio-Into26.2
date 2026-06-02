@@ -155,7 +155,6 @@ section {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-<<<<<<< HEAD
 } 
 
 form{
@@ -214,7 +213,6 @@ font-size:18px;
     border: 5px double rgb(157, 196, 231);
     border-radius: 10px;
     list-style-type: none;
-    padding: 0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;;
 }
 #messages li:hover{
@@ -244,7 +242,3 @@ button:active {
     transform: translateY(1px) scale(0.98);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-=======
-}
->>>>>>> edf02316313637c77d465a8203bf4902750175bc

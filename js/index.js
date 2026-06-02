@@ -40,7 +40,7 @@ newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a>
 <span>${usersMessage}</span>`
 
 const removeButton = document.createElement('button');
-removeButton.innerText= 'Remove';
+removeButton.innerText= 'remove';
 removeButton.type = 'button';
 
 newMessage.appendChild(removeButton);
