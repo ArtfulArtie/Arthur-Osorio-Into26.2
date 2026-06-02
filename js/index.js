@@ -67,7 +67,12 @@ fetch('https://api.github.com/users/artfulartie/repos')
                 projectList.appendChild(project);
             }
 })
-.catch( error => {
+.catch(error => {
+    const projectSection = document.querySelector('#projects');
+    const projectList = projectSection.querySelector('ul');
+    const errorMessage = document.createElement('li');
+    errorMessage.innerText = 'Unable to load projects at this time';
+    projectList.appendChild(errorMessage);
     console.log(error);
 })
 
