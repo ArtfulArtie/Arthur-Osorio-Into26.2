@@ -70,6 +70,7 @@ margin: 0 auto;
     padding: 10px;
     margin:12px;
     list-style-type: none;
+    border-radius: 10px;
 }
 
 #connect{
@@ -241,4 +242,31 @@ button:hover {
 button:active {
     transform: translateY(1px) scale(0.98);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#projects ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#projects li{
+    font-size: 22px;
+    background-color: rgb(5, 5, 45);
+    padding: 15px;
+    border: 5px double rgb(157, 196, 231);
+    border-radius: 10px;
+    min-width: 250px;
+    flex: 1;
+}
+
+#projects li {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projects li:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.3);
 }
