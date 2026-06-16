@@ -1,9 +1,10 @@
-
+// Setting up button constants
 const API_KEY = 'live_IneKyFRCtPiSqRiX2Rnwoaftc5aJIq5rQpHfvskRut1Grvr5TVaoLgTuKXbghbFl';
 const randomDogButton = document.querySelector('#random-dog-btn');
 const dogBreedsButton = document.querySelector('#breeds-button')
 const dogResults = document.querySelector('#dog-results');
 
+// Random dogs button that generates images
 randomDogButton.addEventListener("click", function() {
     fetch('https://api.thedogapi.com/v1/images/search')
     .then( response => response.json())
@@ -21,6 +22,7 @@ randomDogButton.addEventListener("click", function() {
     });
 });
 
+// random cat button that generates a random cat image
 const randomCatButton = document.querySelector('#random-cat-btn');
 randomCatButton.addEventListener("click", function() {
     fetch('https://api.thecatapi.com/v1/images/search')
@@ -39,7 +41,7 @@ randomCatButton.addEventListener("click", function() {
     });
 });
 
-
+// Button that generates a random set of dog breeds
 dogBreedsButton.addEventListener("click", function() {
     fetch('https://api.thedogapi.com/v1/breeds', {
         headers: {

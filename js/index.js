@@ -1,3 +1,11 @@
+// Hamburger menu toggle
+const menuButton = document.querySelector('#menu-button');
+const navLinks = document.querySelector('#nav-links');
+menuButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show-menu");
+});
+
+// Footer with Copyright
 const footer = document.createElement('footer');
 footer.className = 'footer';
 const body = document.querySelector('body');
@@ -13,6 +21,8 @@ copyright.innerHTML = `\u00A9 Arthur Osorio ${thisYear}`;
 
 footer.appendChild(copyright);
 
+//Skill section implementation through JS
+
 let skills = ["JavaScript", "HTML", "CSS", "Adobe Creative Cloud", "Github", "Autodesk Maya", "Mudbox", "GIMP", "Blender", "Canva", "Photography"];
 const skillsSelection = document.querySelector('#skills');
 const skillsList = skillsSelection.querySelector('ul');
@@ -22,6 +32,8 @@ for(let i=0 ; i< skills.length ; i++){
     skillsList.appendChild(skill);
 
 }
+
+//Message form, creation and interaction.
 
 const messageForm = document.querySelector('form[name="leave_message"]')
 messageForm.addEventListener("submit", function(event) {
@@ -33,12 +45,14 @@ const usersMessage = event.target.usersMessage.value ;
 
 console.log(usersName, usersEmail, usersMessage);
 
+// message form list 
 const messageSection = document.querySelector('#messages');
 const messageList = messageSection.querySelector('ul');
 const newMessage = document.createElement('li');
 newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a>
 <span>${usersMessage}</span>`
 
+// remove button for the message form list
 const removeButton = document.createElement('button');
 removeButton.innerText= 'remove';
 removeButton.type = 'button';
@@ -55,6 +69,7 @@ entry.remove();
 messageForm.reset();
 });
 
+// project list using github API
 fetch('https://api.github.com/users/artfulartie/repos')
 .then(response => response.json())
 .then(repositories => {
