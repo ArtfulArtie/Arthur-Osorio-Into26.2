@@ -75,4 +75,3 @@ fetch('https://api.github.com/users/artfulartie/repos')
     projectList.appendChild(errorMessage);
     console.log(error);
 })
-
